@@ -240,8 +240,8 @@ function filter_table(elem) {
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
-    <h1>testDemo.html</h1>
-    <p>Report generated on 29-Mar-2020 at 15:05:47 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <h1>20200329204513testDemo1_2.html</h1>
+    <p>Report generated on 29-Mar-2020 at 20:45:28 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -260,8 +260,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.0</td></tr></table>
     <h2>Summary</h2>
-    <p>5 tests ran in 8.98 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <p>10 tests ran in 13.38 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">8 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">2 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -276,11 +276,25 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">testCase/testDemo.py::TestDemo::test_004</td>
-          <td class="col-duration">4.60</td>
+          <td class="col-duration">0.79</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;testCase.testDemo.TestDemo object at 0x000000000F24CB70&gt;<br/><br/>    def test_004(self):<br/>&gt;       status_code, actual_data, expect_data = self.m.run_back_text(4)<br/><br/>testCase\testDemo.py:47: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>case_number = 4<br/><br/>    @staticmethod<br/>    def run_back_text(case_number):<br/>        &quot;&quot;&quot;<br/>        请求转化text的数据返回<br/>        :param case_number:<br/>        :return:<br/>        &quot;&quot;&quot;<br/>        full_path = rc().get_full_demo_host(case_number)<br/>        param = rc().get_params(case_number)<br/>        method = rc().get_method(case_number)<br/>        t_expect = rc().get_expect_result(case_number)<br/>        if case_number &gt; 0:<br/>            if full_path and method:<br/>                res = RequestMethod().main_json_to_str(method, full_path, param)<br/>                print(&quot;res:\n&quot;, res, &quot;\n&quot;, type(res))<br/>&gt;               t_status_code = res.status_code<br/><span class="error">E               AttributeError: &#x27;NoneType&#x27; object has no attribute &#x27;status_code&#x27;</span><br/><br/>common\runRequest.py:55: AttributeError<br/> -----------------------------Captured stdout setup------------------------------ <br/>test method start!
+            <div class="log">self = &lt;testCase.testDemo.TestDemo object at 0x000000000F3C3860&gt;<br/><br/>    def test_004(self):<br/>&gt;       status_code, actual_data, expect_data = self.m.run_back_text(4)<br/><br/>..\..\study\Python\pythonApiDemo\testCase\testDemo.py:47: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>case_number = 4<br/><br/>    @staticmethod<br/>    def run_back_text(case_number):<br/>        &quot;&quot;&quot;<br/>        请求转化text的数据返回<br/>        :param case_number:<br/>        :return:<br/>        &quot;&quot;&quot;<br/>        full_path = rc().get_full_demo_host(case_number)<br/>        param = rc().get_params(case_number)<br/>        method = rc().get_method(case_number)<br/>        t_expect = rc().get_expect_result(case_number)<br/>        if case_number &gt; 0:<br/>            if full_path and method:<br/>                res = RequestMethod().main_json_to_str(method, full_path, param)<br/>                print(&quot;res:\n&quot;, res, &quot;\n&quot;, type(res))<br/>&gt;               t_status_code = res.status_code<br/><span class="error">E               AttributeError: &#x27;NoneType&#x27; object has no attribute &#x27;status_code&#x27;</span><br/><br/>common\runRequest.py:55: AttributeError<br/> -----------------------------Captured stdout setup------------------------------ <br/>test method start!
+<br/> ------------------------------Captured stdout call------------------------------ <br/>&#x27;float&#x27; object is not iterable
+res:
+ None 
+ &lt;class &#x27;NoneType&#x27;&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">testCase/testDemo2.py::TestDemo2::test_2004</td>
+          <td class="col-duration">0.94</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;testCase.testDemo2.TestDemo2 object at 0x000000000F43CF28&gt;<br/><br/>    def test_2004(self):<br/>&gt;       status_code, actual_data, expect_data = self.m.run_back_text(4)<br/><br/>testCase\testDemo2.py:45: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>case_number = 4<br/><br/>    @staticmethod<br/>    def run_back_text(case_number):<br/>        &quot;&quot;&quot;<br/>        请求转化text的数据返回<br/>        :param case_number:<br/>        :return:<br/>        &quot;&quot;&quot;<br/>        full_path = rc().get_full_demo_host(case_number)<br/>        param = rc().get_params(case_number)<br/>        method = rc().get_method(case_number)<br/>        t_expect = rc().get_expect_result(case_number)<br/>        if case_number &gt; 0:<br/>            if full_path and method:<br/>                res = RequestMethod().main_json_to_str(method, full_path, param)<br/>                print(&quot;res:\n&quot;, res, &quot;\n&quot;, type(res))<br/>&gt;               t_status_code = res.status_code<br/><span class="error">E               AttributeError: &#x27;NoneType&#x27; object has no attribute &#x27;status_code&#x27;</span><br/><br/>common\runRequest.py:55: AttributeError<br/> -----------------------------Captured stdout setup------------------------------ <br/>test method start!
 <br/> ------------------------------Captured stdout call------------------------------ <br/>&#x27;float&#x27; object is not iterable
 res:
  None 
@@ -290,7 +304,7 @@ res:
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">testCase/testDemo.py::TestDemo::test_001</td>
-          <td class="col-duration">1.02</td>
+          <td class="col-duration">1.71</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -299,7 +313,7 @@ test method start!
 <br/> ------------------------------Captured stdout call------------------------------ <br/>test001 start!
 code type: &lt;class &#x27;int&#x27;&gt; self.successCode type: &lt;class &#x27;int&#x27;&gt; 
  actual_data type:  &lt;class &#x27;dict&#x27;&gt; expect_data type: &lt;class &#x27;dict&#x27;&gt;
-actual_data: {&#x27;args&#x27;: {}, &#x27;data&#x27;: &quot;{&#x27;key1&#x27;: &#x27;value1&#x27;, &#x27;key2&#x27;: &#x27;value2&#x27;}&quot;, &#x27;files&#x27;: {}, &#x27;form&#x27;: {}, &#x27;headers&#x27;: {&#x27;Accept&#x27;: &#x27;*/*&#x27;, &#x27;Accept-Encoding&#x27;: &#x27;gzip, deflate&#x27;, &#x27;Content-Length&#x27;: &#x27;36&#x27;, &#x27;Host&#x27;: &#x27;httpbin.org&#x27;, &#x27;User-Agent&#x27;: &#x27;python-requests/2.22.0&#x27;, &#x27;X-Amzn-Trace-Id&#x27;: &#x27;Root=1-5e8048c3-1e73723c7a4e682a7203395a&#x27;}, &#x27;json&#x27;: None, &#x27;origin&#x27;: &#x27;114.255.249.129&#x27;, &#x27;url&#x27;: &#x27;https://httpbin.org/post&#x27;} 
+actual_data: {&#x27;args&#x27;: {}, &#x27;data&#x27;: &quot;{&#x27;key1&#x27;: &#x27;value1&#x27;, &#x27;key2&#x27;: &#x27;value2&#x27;}&quot;, &#x27;files&#x27;: {}, &#x27;form&#x27;: {}, &#x27;headers&#x27;: {&#x27;Accept&#x27;: &#x27;*/*&#x27;, &#x27;Accept-Encoding&#x27;: &#x27;gzip, deflate&#x27;, &#x27;Content-Length&#x27;: &#x27;36&#x27;, &#x27;Host&#x27;: &#x27;httpbin.org&#x27;, &#x27;User-Agent&#x27;: &#x27;python-requests/2.22.0&#x27;, &#x27;X-Amzn-Trace-Id&#x27;: &#x27;Root=1-5e80985c-f6bf78a31d32c4ec861545ab&#x27;}, &#x27;json&#x27;: None, &#x27;origin&#x27;: &#x27;114.246.35.5&#x27;, &#x27;url&#x27;: &#x27;https://httpbin.org/post&#x27;} 
  expect_data: 
  {&#x27;args&#x27;: {}, &#x27;data&#x27;: &quot;{&#x27;key1&#x27;: &#x27;value1&#x27;, &#x27;key2&#x27;: &#x27;value2&#x27;}&quot;, &#x27;files&#x27;: {}, &#x27;form&#x27;: {}, &#x27;headers&#x27;: {&#x27;Accept&#x27;: &#x27;*/*&#x27;, &#x27;Accept-Encoding&#x27;: &#x27;gzip, deflate&#x27;, &#x27;Content-Length&#x27;: &#x27;36&#x27;, &#x27;Host&#x27;: &#x27;httpbin.org&#x27;, &#x27;User-Agent&#x27;: &#x27;python-requests/2.22.0&#x27;, &#x27;X-Amzn-Trace-Id&#x27;: &#x27;Root=1-5e7b6895-3d92dd703eda66805080cd08&#x27;}, &#x27;json&#x27;: None, &#x27;origin&#x27;: &#x27;114.255.249.129&#x27;, &#x27;url&#x27;: &#x27;https://httpbin.org/post&#x27;}
 <br/></div></td></tr></tbody>
@@ -307,7 +321,7 @@ actual_data: {&#x27;args&#x27;: {}, &#x27;data&#x27;: &quot;{&#x27;key1&#x27;: &
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">testCase/testDemo.py::TestDemo::test_002</td>
-          <td class="col-duration">1.40</td>
+          <td class="col-duration">1.16</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -328,9 +342,9 @@ code:
     &quot;Accept-Encoding&quot;: &quot;gzip, deflate&quot;, 
     &quot;Host&quot;: &quot;httpbin.org&quot;, 
     &quot;User-Agent&quot;: &quot;python-requests/2.22.0&quot;, 
-    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5e8048c4-e8bd35959d83486ed142d0d8&quot;
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5e80985d-3372a2e049eb82b815db3490&quot;
   }, 
-  &quot;origin&quot;: &quot;114.255.249.129&quot;, 
+  &quot;origin&quot;: &quot;114.246.35.5&quot;, 
   &quot;url&quot;: &quot;https://httpbin.org/get?{&#x27;key1&#x27;: &#x27;value1&#x27;, &#x27;key2&#x27;: [&#x27;value2&#x27;, &#x27;value3&#x27;]}&quot;
 }
  expType: &lt;class &#x27;str&#x27;&gt; expect:
@@ -340,7 +354,7 @@ code:
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">testCase/testDemo.py::TestDemo::test_003</td>
-          <td class="col-duration">1.08</td>
+          <td class="col-duration">4.23</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -361,12 +375,12 @@ code:
     &quot;Accept-Encoding&quot;: &quot;gzip, deflate&quot;, 
     &quot;Host&quot;: &quot;httpbin.org&quot;, 
     &quot;User-Agent&quot;: &quot;python-requests/2.22.0&quot;, 
-    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5e8048c6-7a8fe290cbe7a7f088b6da53&quot;, 
-    &quot;X-Forwarded-For&quot;: &quot;114.255.249.129&quot;, 
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5e809861-dd68aec00bbfb15276593f46&quot;, 
+    &quot;X-Forwarded-For&quot;: &quot;114.246.35.5&quot;, 
     &quot;X-Forwarded-Port&quot;: &quot;443&quot;, 
     &quot;X-Forwarded-Proto&quot;: &quot;https&quot;
   }, 
-  &quot;origin&quot;: &quot;114.255.249.129&quot;, 
+  &quot;origin&quot;: &quot;114.246.35.5&quot;, 
   &quot;url&quot;: &quot;https://httpbin.org/get?show_env=1&quot;
 }
  expType: &lt;class &#x27;str&#x27;&gt; expect:
@@ -376,6 +390,102 @@ code:
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">testCase/testDemo.py::TestDemo::test_005</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>test method start!
+<br/> ------------------------------Captured stdout call------------------------------ <br/>test003 start!
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/testDemo2.py::TestDemo2::test_2001</td>
+          <td class="col-duration">1.22</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>test 第二个类 start!
+test method start!
+<br/> ------------------------------Captured stdout call------------------------------ <br/>code type: &lt;class &#x27;int&#x27;&gt; self.successCode type: &lt;class &#x27;int&#x27;&gt; 
+ actual_data type:  &lt;class &#x27;dict&#x27;&gt; expect_data type: &lt;class &#x27;dict&#x27;&gt;
+actual_data: {&#x27;args&#x27;: {}, &#x27;data&#x27;: &quot;{&#x27;key1&#x27;: &#x27;value1&#x27;, &#x27;key2&#x27;: &#x27;value2&#x27;}&quot;, &#x27;files&#x27;: {}, &#x27;form&#x27;: {}, &#x27;headers&#x27;: {&#x27;Accept&#x27;: &#x27;*/*&#x27;, &#x27;Accept-Encoding&#x27;: &#x27;gzip, deflate&#x27;, &#x27;Content-Length&#x27;: &#x27;36&#x27;, &#x27;Host&#x27;: &#x27;httpbin.org&#x27;, &#x27;User-Agent&#x27;: &#x27;python-requests/2.22.0&#x27;, &#x27;X-Amzn-Trace-Id&#x27;: &#x27;Root=1-5e809864-00f4ac9b4b2bb36e08cfb0a3&#x27;}, &#x27;json&#x27;: None, &#x27;origin&#x27;: &#x27;114.246.35.5&#x27;, &#x27;url&#x27;: &#x27;https://httpbin.org/post&#x27;} 
+ expect_data: 
+ {&#x27;args&#x27;: {}, &#x27;data&#x27;: &quot;{&#x27;key1&#x27;: &#x27;value1&#x27;, &#x27;key2&#x27;: &#x27;value2&#x27;}&quot;, &#x27;files&#x27;: {}, &#x27;form&#x27;: {}, &#x27;headers&#x27;: {&#x27;Accept&#x27;: &#x27;*/*&#x27;, &#x27;Accept-Encoding&#x27;: &#x27;gzip, deflate&#x27;, &#x27;Content-Length&#x27;: &#x27;36&#x27;, &#x27;Host&#x27;: &#x27;httpbin.org&#x27;, &#x27;User-Agent&#x27;: &#x27;python-requests/2.22.0&#x27;, &#x27;X-Amzn-Trace-Id&#x27;: &#x27;Root=1-5e7b6895-3d92dd703eda66805080cd08&#x27;}, &#x27;json&#x27;: None, &#x27;origin&#x27;: &#x27;114.255.249.129&#x27;, &#x27;url&#x27;: &#x27;https://httpbin.org/post&#x27;}
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/testDemo2.py::TestDemo2::test_2002</td>
+          <td class="col-duration">1.22</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>test method start!
+<br/> ------------------------------Captured stdout call------------------------------ <br/>res:
+ &lt;Response [200]&gt; 
+ &lt;class &#x27;requests.models.Response&#x27;&gt;
+code:
+ 200 actualTyep 
+ &lt;class &#x27;str&#x27;&gt; 
+ actual: 
+ {
+  &quot;args&quot;: {
+    &quot;{&#x27;key1&#x27;: &#x27;value1&#x27;, &#x27;key2&#x27;: [&#x27;value2&#x27;, &#x27;value3&#x27;]}&quot;: &quot;&quot;
+  }, 
+  &quot;headers&quot;: {
+    &quot;Accept&quot;: &quot;*/*&quot;, 
+    &quot;Accept-Encoding&quot;: &quot;gzip, deflate&quot;, 
+    &quot;Host&quot;: &quot;httpbin.org&quot;, 
+    &quot;User-Agent&quot;: &quot;python-requests/2.22.0&quot;, 
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5e809865-ddb946c3c34b94739ef57a1d&quot;
+  }, 
+  &quot;origin&quot;: &quot;114.246.35.5&quot;, 
+  &quot;url&quot;: &quot;https://httpbin.org/get?{&#x27;key1&#x27;: &#x27;value1&#x27;, &#x27;key2&#x27;: [&#x27;value2&#x27;, &#x27;value3&#x27;]}&quot;
+}
+ expType: &lt;class &#x27;str&#x27;&gt; expect:
+  value1&#x27;, &#x27;key2&#x27;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/testDemo2.py::TestDemo2::test_2003</td>
+          <td class="col-duration">1.21</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>test method start!
+<br/> ------------------------------Captured stdout call------------------------------ <br/>res:
+ &lt;Response [200]&gt; 
+ &lt;class &#x27;requests.models.Response&#x27;&gt;
+code:
+ 200 actualTyep 
+ &lt;class &#x27;str&#x27;&gt; 
+ actual: 
+ {
+  &quot;args&quot;: {
+    &quot;show_env&quot;: &quot;1&quot;
+  }, 
+  &quot;headers&quot;: {
+    &quot;Accept&quot;: &quot;*/*&quot;, 
+    &quot;Accept-Encoding&quot;: &quot;gzip, deflate&quot;, 
+    &quot;Host&quot;: &quot;httpbin.org&quot;, 
+    &quot;User-Agent&quot;: &quot;python-requests/2.22.0&quot;, 
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-5e809866-2e4afa2232d075a2326272f8&quot;, 
+    &quot;X-Forwarded-For&quot;: &quot;114.246.35.5&quot;, 
+    &quot;X-Forwarded-Port&quot;: &quot;443&quot;, 
+    &quot;X-Forwarded-Proto&quot;: &quot;https&quot;
+  }, 
+  &quot;origin&quot;: &quot;114.246.35.5&quot;, 
+  &quot;url&quot;: &quot;https://httpbin.org/get?show_env=1&quot;
+}
+ expType: &lt;class &#x27;str&#x27;&gt; expect:
+  &quot;show_env&quot;: &quot;1&quot;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCase/testDemo2.py::TestDemo2::test_2005</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>

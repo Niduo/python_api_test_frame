@@ -1,11 +1,11 @@
 # coding=utf-8
-from testModule.module import Module
+from common.runRequest import RunRequest
 
 
 class TestDemo2:
     @classmethod
     def setup_class(cls):
-        cls.m = Module()
+        cls.m = RunRequest()
         cls.successCode = 200
         cls.msg_code = '错误, response code is not 200'
         cls.msg_data = '错误, data不一致'

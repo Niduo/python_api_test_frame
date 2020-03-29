@@ -1,8 +1,5 @@
-import os
-import requests
-from testModule import module
-import os
-from common.configRead import ConfigRead
+import datetime
+
 
 class A:
     def __init__(self):
@@ -13,4 +10,4 @@ class A:
         print(tt)
 
 
-A.test('ttttttt')
+print(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
