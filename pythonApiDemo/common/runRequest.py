@@ -63,6 +63,3 @@ class RunRequest:
         else:
             print("case number不能小于0")
 
-
-# Module.run_back_json(1)
-# Module.run_back_text(3)

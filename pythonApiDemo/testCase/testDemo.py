@@ -1,4 +1,9 @@
 # coding=utf-8
+"""
+by: 老屋
+des：测试httpbin接口用例
+"""
+
 from common.runRequest import RunRequest
 import pytest
 
@@ -55,9 +60,8 @@ class TestDemo:
 
 
 
-
 if __name__ == '__main__':
-    pytest.main(['-x', './testDemo.py'])
-    # pytest.main(['-vv', './testDemo.py::TestDemo::test_002'])
+    # pytest.main(['-x', './testDemo.py'])
+    pytest.main(['-vv', './testDemo.py::TestDemo::test_002'])
     # pytest.main(['-v', './testDemo.py::TestDemo::test_001', './testDemo.py::TestDemo::test_002'])
 

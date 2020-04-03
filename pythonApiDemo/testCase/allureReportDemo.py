@@ -1,4 +1,10 @@
 # coding=utf-8
+"""
+by 老屋
+des 使用 allure执行用例，但插件无法下载暂不用
+
+"""
+
 from common.runRequest import RunRequest
 import pytest
 import allure

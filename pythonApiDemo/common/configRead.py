@@ -1,3 +1,8 @@
+"""
+by 老屋
+des 封装读取config.txt文件的方法
+"""
+
 import os
 import configparser
 
@@ -75,8 +80,8 @@ class ConfigRead:
         return value
 
     # 获取指定section下所有的键值对
-    def get_key_value(self, item):
-        value = self.cf.sections(item)
+    def get_key_value(self, item_):
+        value = self.cf.sections(item_)
         return value
 
     # 获取testfile路径
@@ -93,6 +98,4 @@ class ConfigRead:
 
 if __name__ == '__main__':
     C = ConfigRead()
-#     # print(configPath, '\n')
-    C.get_testFile_path()
-#     print(C.get_demoHost())
+    C.testFilePath

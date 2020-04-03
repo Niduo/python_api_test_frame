@@ -1,3 +1,8 @@
+"""
+by 老屋
+des 变量话要执行的case，使执行更变量
+"""
+
 from common.sendEmail import SendEmail
 import pytest
 import datetime
@@ -7,11 +12,12 @@ report_path = './report/'
 test_demo = 'testDemo.html'
 test001_002 = 'testDemo1_2.html'
 test_demo2 = 'test_Demo1_2.html'
+demo_module_case1 = 'demo_module_case1.html'
 cases = 'all_case.html'
 now_time = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
 
 # 执行test_Demo_module1 case
-demo_module_case1_2 = ['-v', './testCase/testDemo.py::TestDemo::test001::tests002', './testCase/testDemo.py::TestDemo::test002', '--html=./report'+'%s' % test001_002]
+demo_module_case1 = ['-v', './testCase/testDemo.py::TestDemo::test001', '--html=./report/'+'%s' % demo_module_case1]
 
 # 执行test_Demo
 testDemo = ['-v', './testCase/testDemo.py', '--html=%s' % report_path+'%s%s' % (now_time, test_demo)]
@@ -27,7 +33,7 @@ all_case = ['-v', './testCase', '--html=./report/'+'%s' % cases]
 
 
 if __name__ == '__main__':
-    pytest.main(testDemo1_2)
+    pytest.main(testDemo)
 
     # send mail
     sm = SendEmail()
