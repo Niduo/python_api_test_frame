@@ -138,9 +138,4 @@ class ReadCSV:
 if __name__ == '__main__':
     d = ReadCSV()
     c = d.get_value_by_row_column(1, 3)
-    print(c)
-    # e = d.get_sub_path(1)
-    # f = d.get_module(1)
-    # c.get_value_by_row_column(1,1)
-    # d.csvData.loc[[1], [1]]
-    # print(d.csvData.iloc[2][3])
+ 

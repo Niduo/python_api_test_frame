@@ -59,7 +59,6 @@ class TestDemo:
         assert c == 3
 
 
-
 if __name__ == '__main__':
     # pytest.main(['-x', './testDemo.py'])
     pytest.main(['-vv', './testDemo.py::TestDemo::test_002'])

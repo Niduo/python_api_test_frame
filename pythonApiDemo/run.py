@@ -1,6 +1,6 @@
 """
 by 老屋
-des 变量话要执行的case，使执行更变量
+des 主运行文件，变量化case
 """
 
 from common.sendEmail import SendEmail
